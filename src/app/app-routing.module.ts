@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'local', 
+    loadChildren: './local/local.module#LocalPageModule' }
 ];
 
 @NgModule({
