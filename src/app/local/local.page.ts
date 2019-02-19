@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Local } from '../model/local';
 
 @Component({
   selector: 'app-local',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalPage implements OnInit {
 
+  MYDB: string = "localDB";
+
+  locals : Local[]=[];
+  newLocal : Local = <Local>{};
+  
   constructor() { }
 
   ngOnInit() {
